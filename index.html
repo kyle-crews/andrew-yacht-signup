@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knoty Yachty Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Knoty Yachty Signup</h1>
+        <h3>Good Vibes and Sunset Rides</h3>
+        <div class="event-details">
+            <p class="date">Date: <span id="event-date">August 10, 2023</span> <button onclick="updateEventDetails()">Edit</button></p>
+            <p class="launch-spot">Launch spot: <span id="event-launch-spot">Marina Bay</span> <button onclick="updateEventDetails()">Edit</button></p>
+        </div>
+        <div class="signup-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="message">Leave a message for the Captain:</label>
+            <textarea id="message" placeholder="Optional: Enter your message"></textarea>
+            <button onclick="addAttendee()">Sign Up</button>
+        </div>
+        <div class="attendees-list">
+            <h2>Attendees:</h2>
+            <ul id="attendees"></ul>
+            <p>Total Attendees: <span id="total-attendees">0</span>/15</p>
+            <button onclick="clearAttendees()">Clear Attendees (password required)</button>
+        </div>
+        <div class="neon-green-box">
+            <p><strong>Boat Rules for a Good Day on the Water:</strong></p>
+            <ol>
+                <li>Bring whatever you'd like while out on the water... booze, food, water, pepperoni pizza</li>
+                <li>No glass bottles or anything else not allowed on the water</li>
+                <li>Shoes off when you board the boat. We're on the water... no shoes, no shirt, no problem</li>
+                <li>There's a community cooler, but feel free to bring your own. Extra ice or beverages are always welcome!</li>
+                <li>Launch spot and time are listed at the top of the site</li>
+                <li>If you can't make it, just remove your name from the list please!</li>
+                <li>For any other questions, hit up Andrew's cell</li>
+            </ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
